@@ -401,7 +401,7 @@ function ChatMessage({ children, side = "bot", delay = 0, className = "" }) {
 
 function ChatMockup({ hero = false }) {
   return (
-    <div className={`rounded-[38px] bg-white/92 shadow-[0_30px_100px_rgba(23,23,23,0.16)] ring-1 ring-black/8 backdrop-blur ${hero ? "max-w-[500px] p-3" : "p-4"}`}>
+    <div className={`bg-white/92 shadow-[0_30px_100px_rgba(23,23,23,0.16)] ring-1 ring-black/8 backdrop-blur ${hero ? "max-w-[500px] rounded-[32px] p-2.5 sm:rounded-[38px] sm:p-3" : "rounded-[38px] p-4"}`}>
       <div className={`flex items-center justify-between border-b border-black/6 px-2 ${hero ? "pb-3" : "pb-4"}`}>
         <div className="flex items-center gap-3">
           <div className={`${hero ? "h-10 w-10" : "h-11 w-11"} grid place-items-center rounded-2xl bg-[#1F3D3A] text-white`}>
@@ -414,7 +414,7 @@ function ChatMockup({ hero = false }) {
         </div>
         <span className="rounded-full bg-[#E8F3EF] px-3 py-1 text-xs font-semibold text-[#1F3D3A]">Activo</span>
       </div>
-      <div className={`${hero ? "space-y-3 p-2 pt-4 sm:p-3" : "space-y-4 p-1 pt-5 sm:p-4"}`}>
+      <div className={`${hero ? "space-y-3 p-1.5 pt-4 sm:p-3" : "space-y-4 p-1 pt-5 sm:p-4"}`}>
         <ChatMessage side="bot" delay={0.1} className={hero ? "p-3 text-sm leading-6" : ""}>
           Envíame una foto del inmueble y dime cómo quieres reformarlo.
         </ChatMessage>
@@ -426,7 +426,7 @@ function ChatMockup({ hero = false }) {
           <img
             src="/media/chatbot/chat-foto-enviada.webp"
             alt="Salón original enviado al chatbot"
-            className={`${hero ? "h-28" : "h-36"} w-full rounded-[20px] object-cover`}
+            className={`${hero ? "h-24 sm:h-28" : "h-36"} w-full rounded-[20px] object-cover`}
             loading={hero ? "eager" : "lazy"}
           />
         </ChatMessage>
@@ -438,7 +438,7 @@ function ChatMockup({ hero = false }) {
           <img
             src="/media/chatbot/chat-reforma-generada.webp"
             alt="Salón reformado generado por el chatbot"
-            className={`${hero ? "h-[7.5rem]" : "h-44"} w-full rounded-[22px] object-cover`}
+            className={`${hero ? "h-24 sm:h-[7.5rem]" : "h-44"} w-full rounded-[22px] object-cover`}
             loading={hero ? "eager" : "lazy"}
           />
           <div className={`shimmer-pill mt-3 flex items-center gap-2 rounded-full bg-[#FAF7F2] px-4 ${hero ? "py-2.5 text-xs" : "py-3 text-sm"} font-semibold text-[#1F3D3A]`}>
@@ -454,13 +454,13 @@ function ChatMockup({ hero = false }) {
 function HeroVisual() {
   const { ref, offset, onMouseMove, onMouseLeave } = useMouseParallax(18);
   return (
-    <motion.div ref={ref} onMouseMove={onMouseMove} onMouseLeave={onMouseLeave} variants={fadeUp} className="relative min-h-[590px] lg:min-h-[640px]">
-      <div className="absolute inset-y-3 left-[9%] right-[4%] rounded-[52px] bg-[linear-gradient(145deg,rgba(246,239,231,0.82),rgba(255,255,255,0.42))] shadow-[0_36px_120px_rgba(23,23,23,0.08)] ring-1 ring-black/5" />
-      <div className="absolute right-[10%] top-[11%] hidden rounded-full bg-white/86 px-4 py-2 text-sm font-semibold text-[#1F3D3A] shadow-lg ring-1 ring-black/8 backdrop-blur sm:block">
+    <motion.div ref={ref} onMouseMove={onMouseMove} onMouseLeave={onMouseLeave} variants={fadeUp} className="relative mx-auto w-full max-w-[480px] py-3 lg:min-h-[640px] lg:max-w-none lg:py-0">
+      <div className="absolute inset-x-1 bottom-6 top-8 rounded-[42px] bg-[linear-gradient(145deg,rgba(246,239,231,0.82),rgba(255,255,255,0.42))] shadow-[0_30px_90px_rgba(23,23,23,0.08)] ring-1 ring-black/5 lg:inset-y-3 lg:left-[9%] lg:right-[4%] lg:rounded-[52px]" />
+      <div className="absolute right-[10%] top-[11%] hidden rounded-full bg-white/86 px-4 py-2 text-sm font-semibold text-[#1F3D3A] shadow-lg ring-1 ring-black/8 backdrop-blur lg:block">
         WhatsApp · Telegram
       </div>
-      <motion.div style={{ x: offset.x * -0.18, y: offset.y * -0.18 }} className="absolute left-1/2 top-4 z-20 w-[88%] max-w-[540px] -translate-x-1/2">
-        <div className="rounded-[44px] bg-white/50 p-3 shadow-[0_34px_110px_rgba(23,23,23,0.10)] ring-1 ring-white/70 backdrop-blur">
+      <motion.div style={{ x: offset.x * -0.18, y: offset.y * -0.18 }} className="relative z-20 mx-auto w-full max-w-[430px] px-1 sm:max-w-[500px] lg:absolute lg:left-1/2 lg:top-4 lg:w-[88%] lg:max-w-[540px] lg:-translate-x-1/2 lg:px-0">
+        <div className="rounded-[36px] bg-white/50 p-2 shadow-[0_28px_90px_rgba(23,23,23,0.10)] ring-1 ring-white/70 backdrop-blur sm:rounded-[44px] sm:p-3">
           <ChatMockup hero />
         </div>
       </motion.div>
@@ -793,7 +793,26 @@ function PremiumVisualSection() {
     <section className="overflow-hidden bg-[linear-gradient(135deg,#F6EFE7_0%,#FFFFFF_100%)] py-24 sm:py-32">
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-[0.78fr_1.22fr]">
         <SectionHeading eyebrow="Maqueta visual" title="Una experiencia premium detrás de un mensaje de chat" text="El bot convierte la foto original en capas comerciales: propuesta reformada, vídeo comparativo y contenido preparado para canales inmobiliarios." center={false} />
-        <div className="relative min-h-[620px]">
+        <div className="lg:hidden">
+          <div className="relative mx-auto mt-4 grid h-[310px] max-w-[360px] place-items-center overflow-hidden rounded-[42px] bg-white/45 shadow-[0_26px_80px_rgba(23,23,23,0.08)] ring-1 ring-black/6">
+            <div className="absolute h-[250px] w-[250px] rounded-full bg-[#EFE5D7]/70 ring-1 ring-[#D9C3A5]/45" />
+            <div className="relative z-10">
+              <ArchitecturalHouse3D focus />
+            </div>
+          </div>
+          <motion.div variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.22 }} className="mt-6 grid gap-4 sm:grid-cols-2">
+            {cards.map(([title, label, imageSrc]) => (
+              <motion.article key={title} variants={fadeUp} className="rounded-[28px] bg-white p-3 shadow-[0_18px_56px_rgba(23,23,23,0.08)] ring-1 ring-black/8">
+                <img src={imageSrc} alt={title} className="h-32 w-full rounded-[20px] object-cover" loading="lazy" />
+                <div className="px-2 py-3">
+                  <p className="text-sm font-semibold text-[#171717]">{title}</p>
+                  <p className="mt-1 text-xs text-[#6B6B6B]">{label}</p>
+                </div>
+              </motion.article>
+            ))}
+          </motion.div>
+        </div>
+        <div className="relative hidden min-h-[620px] lg:block">
           <div className="absolute left-1/2 top-1/2 h-[360px] w-[360px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#EFE5D7]/60 ring-1 ring-[#D9C3A5]/50" />
           <div className="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2">
             <ArchitecturalHouse3D focus />
