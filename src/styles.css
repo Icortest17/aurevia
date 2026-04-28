@@ -1,0 +1,351 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #171717;
+  background: #ffffff;
+  font-synthesis: none;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+  padding-bottom: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.premium-button-primary,
+.premium-button-primary:visited,
+.premium-button-primary:hover,
+.premium-button-primary:focus {
+  color: #ffffff !important;
+}
+
+.premium-button-secondary,
+.premium-button-secondary:visited,
+.premium-button-secondary:hover,
+.premium-button-secondary:focus {
+  color: #1f3d3a !important;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.h-18 {
+  height: 4.5rem;
+}
+
+.h-13 {
+  height: 3.25rem;
+}
+
+.w-13 {
+  width: 3.25rem;
+}
+
+.ring-black\/8 {
+  --tw-ring-color: rgba(0, 0, 0, 0.08);
+}
+
+.border-black\/8 {
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+.border-black\/6 {
+  border-color: rgba(0, 0, 0, 0.06);
+}
+
+.interior-scene {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: #f6efe7;
+}
+
+.interior-scene span {
+  position: absolute;
+  display: block;
+}
+
+.scene-wall {
+  inset: 0 0 32%;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.26), transparent 24%, rgba(255, 255, 255, 0.3) 62%, transparent),
+    linear-gradient(135deg, #d8cec2 0%, #f7f1ea 52%, #c8bba8 100%);
+}
+
+.scene-floor {
+  inset: auto 0 0;
+  height: 38%;
+  background:
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.18) 0 2px, transparent 2px 34px),
+    linear-gradient(135deg, #b9a68f, #dfc6a6);
+  transform: skewY(-4deg);
+  transform-origin: left bottom;
+}
+
+.scene-window {
+  left: 8%;
+  top: 12%;
+  width: 34%;
+  height: 46%;
+  border-radius: 26px 26px 12px 12px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.78), rgba(255,255,255,0.32));
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  box-shadow: inset 0 0 32px rgba(31, 61, 58, 0.08), 0 22px 40px rgba(23, 23, 23, 0.08);
+}
+
+.scene-art {
+  right: 10%;
+  top: 14%;
+  width: 28%;
+  height: 28%;
+  border-radius: 22px;
+  background: linear-gradient(145deg, rgba(31,61,58,0.12), rgba(200,169,106,0.2));
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.scene-sofa {
+  left: 16%;
+  bottom: 18%;
+  width: 56%;
+  height: 22%;
+  border-radius: 32px 32px 18px 18px;
+  background: #978776;
+  box-shadow: 0 30px 42px rgba(23, 23, 23, 0.18);
+}
+
+.scene-table {
+  right: 16%;
+  bottom: 14%;
+  width: 26%;
+  height: 8%;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 18px 26px rgba(23, 23, 23, 0.16);
+}
+
+.scene-plant {
+  right: 9%;
+  bottom: 25%;
+  width: 15%;
+  height: 28%;
+  border-radius: 50% 50% 18px 18px;
+  background: linear-gradient(145deg, rgba(31, 61, 58, 0.32), rgba(31, 61, 58, 0.08));
+}
+
+.scene-light {
+  left: 50%;
+  top: 0;
+  width: 28%;
+  height: 48%;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(255,255,255,0.65), transparent 68%);
+  transform: translateX(-50%);
+}
+
+.interior-scene.after .scene-wall {
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.38), transparent 22%, rgba(255, 255, 255, 0.45) 64%, transparent),
+    linear-gradient(135deg, #f7f1ea 0%, #ffffff 50%, #d9c3a5 100%);
+}
+
+.interior-scene.after .scene-floor {
+  background:
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.26) 0 2px, transparent 2px 34px),
+    linear-gradient(135deg, #d9c3a5, #f3dbc0);
+}
+
+.interior-scene.after .scene-sofa {
+  background: linear-gradient(135deg, #1f3d3a, #2f5752);
+}
+
+.interior-scene.after .scene-art {
+  background: linear-gradient(145deg, rgba(200,169,106,0.65), rgba(255,255,255,0.6));
+}
+
+.interior-scene.kitchen .scene-sofa {
+  left: 10%;
+  bottom: 17%;
+  width: 78%;
+  height: 18%;
+  border-radius: 18px;
+}
+
+.interior-scene.kitchen .scene-art {
+  right: 8%;
+  top: 12%;
+  width: 20%;
+  height: 44%;
+}
+
+.interior-scene.bedroom .scene-sofa {
+  left: 18%;
+  bottom: 16%;
+  width: 62%;
+  height: 24%;
+  border-radius: 26px 26px 14px 14px;
+}
+
+.interior-scene.terrace .scene-wall {
+  background: linear-gradient(135deg, #e9ddca, #fff8ef 50%, #cfd8d3);
+}
+
+.interior-scene.terrace .scene-window {
+  width: 48%;
+  background: linear-gradient(135deg, rgba(190,211,209,0.72), rgba(255,255,255,0.45));
+}
+
+.interior-scene.terrace .scene-sofa {
+  background: linear-gradient(135deg, #d9c3a5, #f0dcc2);
+}
+
+.typing-dots {
+  display: inline-flex;
+  gap: 3px;
+}
+
+.typing-dots i {
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: #c8a96a;
+  animation: typingPulse 1.2s infinite ease-in-out;
+}
+
+.typing-dots i:nth-child(2) {
+  animation-delay: 0.16s;
+}
+
+.typing-dots i:nth-child(3) {
+  animation-delay: 0.32s;
+}
+
+.shimmer-pill {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-pill::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(105deg, transparent 0%, rgba(255,255,255,0.72) 46%, transparent 72%);
+  transform: translateX(-120%);
+  animation: shimmerSweep 2.8s infinite;
+}
+
+@keyframes typingPulse {
+  0%, 70%, 100% {
+    transform: translateY(0);
+    opacity: 0.42;
+  }
+  35% {
+    transform: translateY(-4px);
+    opacity: 1;
+  }
+}
+
+@keyframes shimmerSweep {
+  0% {
+    transform: translateX(-120%);
+  }
+  55%, 100% {
+    transform: translateX(120%);
+  }
+}
+
+.villa-scene {
+  position: relative;
+  width: min(520px, 78vw);
+  height: 360px;
+  isolation: isolate;
+}
+
+.villa-scene.compact {
+  width: 220px;
+  height: 174px;
+}
+
+.villa-scene.focus {
+  width: 330px;
+  height: 255px;
+}
+
+.villa-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  border-radius: 34px;
+}
+
+.villa-light {
+  position: absolute;
+  left: 50%;
+  top: 2%;
+  width: 190px;
+  height: 190px;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(255,255,255,0.78), rgba(217,195,165,0.18) 42%, transparent 70%);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.villa-fallback {
+  position: absolute;
+  inset: 6%;
+  z-index: 1;
+  width: 88%;
+  height: 88%;
+  object-fit: contain;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.villa-image-shadow {
+  position: absolute;
+  left: 18%;
+  right: 16%;
+  bottom: 20px;
+  height: 44px;
+  border-radius: 999px;
+  background: radial-gradient(ellipse, rgba(23, 23, 23, 0.2), transparent 68%);
+  filter: blur(16px);
+  transform: rotateX(68deg);
+}
+
+@media (max-width: 760px) {
+  body {
+    padding-bottom: 76px;
+  }
+
+  .villa-scene {
+    width: min(330px, 86vw);
+    height: 240px;
+  }
+
+  .villa-scene.focus {
+    width: min(290px, 78vw);
+    height: 220px;
+  }
+
+  .villa-scene.compact {
+    display: none;
+  }
+}

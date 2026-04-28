@@ -1,0 +1,18 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Aurevia AI mark</title>
+  <desc id="desc">Premium monogram mark combining an A, a refined property silhouette, and a golden visual spark.</desc>
+  <rect width="512" height="512" rx="116" fill="#1F3D3A"/>
+  <rect x="26" y="26" width="460" height="460" rx="96" fill="url(#ivoryGlow)" opacity="0.12"/>
+  <path d="M154 344L237.5 158C244.6 142.2 267.4 142.2 274.5 158L358 344" stroke="#FAF7F2" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M197 269H315" stroke="#FAF7F2" stroke-width="30" stroke-linecap="round"/>
+  <path d="M182 228L256 169L330 228" stroke="#C8A96A" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M212 344H300" stroke="#C8A96A" stroke-width="22" stroke-linecap="round"/>
+  <circle cx="358" cy="154" r="17" fill="#C8A96A"/>
+  <path d="M358 108V130M358 178V200M312 154H334M382 154H404" stroke="#C8A96A" stroke-width="14" stroke-linecap="round"/>
+  <defs>
+    <radialGradient id="ivoryGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 96) rotate(55) scale(420)">
+      <stop stop-color="#FAF7F2"/>
+      <stop offset="1" stop-color="#FAF7F2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

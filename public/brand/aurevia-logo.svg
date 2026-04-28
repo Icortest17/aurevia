@@ -1,0 +1,22 @@
+<svg width="1120" height="320" viewBox="0 0 1120 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Aurevia AI logo</title>
+  <desc id="desc">Aurevia AI premium brand logo for an AI real estate visual marketing product.</desc>
+  <rect width="1120" height="320" rx="56" fill="#FAF7F2"/>
+  <rect x="32" y="32" width="256" height="256" rx="62" fill="#1F3D3A"/>
+  <rect x="46" y="46" width="228" height="228" rx="50" fill="url(#markGlow)" opacity="0.12"/>
+  <path d="M102 210L147 109C151 100 164 100 168 109L213 210" stroke="#FAF7F2" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M125 170H190" stroke="#FAF7F2" stroke-width="17" stroke-linecap="round"/>
+  <path d="M118 147L158 115L198 147" stroke="#C8A96A" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M134 210H182" stroke="#C8A96A" stroke-width="13" stroke-linecap="round"/>
+  <circle cx="214" cy="108" r="10" fill="#C8A96A"/>
+  <path d="M214 80V93M214 123V136M186 108H199M229 108H242" stroke="#C8A96A" stroke-width="8" stroke-linecap="round"/>
+  <text x="336" y="164" fill="#171717" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="78" font-weight="650" letter-spacing="-1">Aurevia</text>
+  <text x="692" y="164" fill="#C8A96A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="78" font-weight="650" letter-spacing="-1">AI</text>
+  <text x="340" y="216" fill="#1F3D3A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="650" letter-spacing="5">VISUAL REAL ESTATE INTELLIGENCE</text>
+  <defs>
+    <radialGradient id="markGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(104 58) rotate(55) scale(230)">
+      <stop stop-color="#FAF7F2"/>
+      <stop offset="1" stop-color="#FAF7F2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>
