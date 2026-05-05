@@ -1024,7 +1024,7 @@ function Footer() {
     {
       title: "Producto",
       links: [
-        ["C?mo funciona", "#como-funciona"],
+        ["Cómo funciona", "#como-funciona"],
         ["Ejemplos", "#ejemplos"],
         ["Beneficios", "#beneficios"]
       ]
@@ -1065,7 +1065,7 @@ function Footer() {
             </span>
             <span className="font-semibold">Aurevia AI</span>
           </div>
-          <p className="mt-4 max-w-sm leading-7 text-white/60">Chatbot de WhatsApp y Telegram para transformar fotos de inmuebles en reformas visuales, v?deos antes/despu?s y contenido comercial.</p>
+          <p className="mt-4 max-w-sm leading-7 text-white/60">Chatbot de WhatsApp y Telegram para transformar fotos de inmuebles en reformas visuales, vídeos antes/después y contenido comercial.</p>
         </div>
         {footerColumns.map(({ title, links }) => (
           <div key={title}>
@@ -1082,9 +1082,9 @@ function Footer() {
       </div>
       <div className="mx-auto mt-10 max-w-7xl border-t border-white/10 px-5 pt-6 text-sm text-white/45 sm:px-8">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-          <span>? 2026 Aurevia AI. Todos los derechos reservados.</span>
+          <span>© 2026 Aurevia AI. Todos los derechos reservados.</span>
           <a href="https://telkora.com" target="_blank" rel="noreferrer" className="text-white/56 transition hover:text-white">
-            Web dise?ada por Telkora
+            Web diseñada por Telkora
           </a>
         </div>
       </div>
