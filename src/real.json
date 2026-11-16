@@ -165,16 +165,24 @@
   ],
   "videos": [
     {
-      "slug": "video-cocina",
+      "slug": "video-salon-tarima",
+      "name": "Salón con tarima"
+    },
+    {
+      "slug": "video-salon-mobiliario",
+      "name": "Salón amueblado"
+    },
+    {
+      "slug": "video-dormitorio-buhardilla",
+      "name": "Dormitorio en buhardilla"
+    },
+    {
+      "slug": "video-salon-cocina",
+      "name": "Salón y cocina"
+    },
+    {
+      "slug": "video-cocina-orden",
       "name": "Cocina"
-    },
-    {
-      "slug": "video-bano",
-      "name": "Baño"
-    },
-    {
-      "slug": "video-salon",
-      "name": "Salón"
     }
   ]
 }
