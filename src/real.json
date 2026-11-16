@@ -1,0 +1,180 @@
+{
+  "items": [
+    {
+      "slug": "salon-chimenea",
+      "cat": "salones",
+      "title": "Salón vacío con chimenea → salón moderno",
+      "desc": "Estancia vacía convertida en un salón cálido y habitable.",
+      "zone": "Pirineo aragonés",
+      "alt": "salón con chimenea"
+    },
+    {
+      "slug": "salon-granito",
+      "cat": "salones",
+      "title": "Salón con tarima → salón luminoso",
+      "desc": "Maderas oscuras y suelo de terrazo, a un salón claro y actual.",
+      "zone": "Aragón",
+      "alt": "salón amplio"
+    },
+    {
+      "slug": "salon-montana",
+      "cat": "salones",
+      "title": "Salón de montaña → moderno cálido",
+      "desc": "Estilo rústico anticuado a un espacio contemporáneo.",
+      "zone": "Pirineo aragonés",
+      "alt": "salón de montaña"
+    },
+    {
+      "slug": "salon-sofa",
+      "cat": "salones",
+      "title": "Salón vacío → salón amueblado",
+      "desc": "Home staging virtual en un salón sin muebles.",
+      "zone": "Pirineo aragonés",
+      "alt": "salón vacío"
+    },
+    {
+      "slug": "cocina-isla",
+      "cat": "cocinas",
+      "title": "Cocina antigua → cocina con isla",
+      "desc": "Cocina de los 90 a una cocina abierta y moderna.",
+      "zone": "Pirineo aragonés",
+      "alt": "cocina antigua"
+    },
+    {
+      "slug": "cocina-gris",
+      "cat": "cocinas",
+      "title": "Cocina sin montar → cocina gris moderna",
+      "desc": "Visualiza el resultado final antes de la obra.",
+      "zone": "Aragón",
+      "alt": "cocina"
+    },
+    {
+      "slug": "cocina-abierta",
+      "cat": "cocinas",
+      "title": "Cocina básica → cocina premium",
+      "desc": "Más orden visual y mayor valor percibido.",
+      "zone": "Aragón",
+      "alt": "cocina y comedor"
+    },
+    {
+      "slug": "bano-zaragoza",
+      "cat": "banos",
+      "title": "Baño con mueble azul → baño moderno",
+      "desc": "Un baño anticuado reimaginado con mueble suspendido y espejo con luz.",
+      "zone": "Zaragoza",
+      "alt": "baño"
+    },
+    {
+      "slug": "bano-banera",
+      "cat": "banos",
+      "title": "Baño con cortina → baño con mampara",
+      "desc": "Del baño de hace décadas a uno actual con mampara y espejo led.",
+      "zone": "Pirineo aragonés",
+      "alt": "baño"
+    },
+    {
+      "slug": "buhardilla-dormitorio",
+      "cat": "dormitorios",
+      "title": "Buhardilla trastero → dormitorio",
+      "desc": "Una buhardilla llena de cosas, convertida en un dormitorio de revista.",
+      "zone": "Aragón",
+      "alt": "buhardilla"
+    },
+    {
+      "slug": "dormitorio-moderno",
+      "cat": "dormitorios",
+      "title": "Dormitorio anticuado → dormitorio moderno",
+      "desc": "Colores y textiles actuales, madera clara y luz cálida.",
+      "zone": "Aragón",
+      "alt": "dormitorio"
+    },
+    {
+      "slug": "dormitorio-sencillo",
+      "cat": "dormitorios",
+      "title": "Dormitorio básico → dormitorio decorado",
+      "desc": "Misma habitación, otra sensación al verla decorada.",
+      "zone": "Pirineo aragonés",
+      "alt": "dormitorio"
+    },
+    {
+      "slug": "habitacion-doble",
+      "cat": "dormitorios",
+      "title": "Habitación doble → habitación acogedora",
+      "desc": "Una habitación de alquiler o hospedaje con más valor percibido.",
+      "zone": "Pirineo aragonés",
+      "alt": "habitación"
+    },
+    {
+      "slug": "casa-piscina",
+      "cat": "exteriores",
+      "title": "Casa y jardín → casa con piscina y pérgola",
+      "desc": "Visualiza el potencial exterior de una vivienda de montaña.",
+      "zone": "Pirineo aragonés",
+      "alt": "casa con jardín"
+    },
+    {
+      "slug": "vista-aerea",
+      "cat": "exteriores",
+      "title": "Edificio de pueblo → edificio reformado",
+      "desc": "Una vista aérea de la propuesta de rehabilitación.",
+      "zone": "Pirineo aragonés",
+      "alt": "edificio en un pueblo"
+    },
+    {
+      "slug": "edificio-montana",
+      "cat": "exteriores",
+      "title": "Edificio de apartamentos → temporadas",
+      "desc": "La misma promoción en verano y bajo la nieve.",
+      "zone": "Pirineo aragonés",
+      "alt": "edificio de apartamentos"
+    },
+    {
+      "slug": "terraza-montana",
+      "cat": "exteriores",
+      "title": "Terraza con vistas → terraza para disfrutar",
+      "desc": "Una terraza con vistas al valle, lista para vivirla.",
+      "zone": "Pirineo aragonés",
+      "alt": "terraza"
+    },
+    {
+      "slug": "piscina",
+      "cat": "exteriores",
+      "title": "Piscina antigua → piscina con pérgola",
+      "desc": "Zona de piscina rehabilitada con césped y pérgola.",
+      "zone": "Pirineo aragonés",
+      "alt": "piscina"
+    }
+  ],
+  "styles": [
+    {
+      "slug": "estilo-blanco-y-negro",
+      "name": "Blanco y negro"
+    },
+    {
+      "slug": "estilo-moderno-oscuro",
+      "name": "Moderno oscuro"
+    },
+    {
+      "slug": "estilo-beige-minimalista",
+      "name": "Beige minimalista"
+    },
+    {
+      "slug": "estilo-claro-y-funcional",
+      "name": "Claro y funcional"
+    }
+  ],
+  "videos": [
+    {
+      "slug": "video-cocina",
+      "name": "Cocina"
+    },
+    {
+      "slug": "video-bano",
+      "name": "Baño"
+    },
+    {
+      "slug": "video-salon",
+      "name": "Salón"
+    }
+  ]
+}
